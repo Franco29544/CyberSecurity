@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="C:\Users\Franc\OneDrive\Escritorio\proyecto\Pa2\Images\icon.ico"
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img id="FONDO" src="images/C.png" height="500px" alt="Logo" class="logo">
+            <a href="#contenido" class="btn-empezar">Empezar</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#amenazas">Tipos de Amenazas</a></li>
+            <li><a href="#proteccion">Cómo Protegerse</a></li>
+            <li><a href="#practicas">Prácticas para Empresas</a></li>
+            <li><a href="#normativas">Normativas</a></li>
+            <li><a href="#recursos">Recursos Adicionales</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main id="contenido">
+        <main>
+            <section id="introduccion">
+                <h2>Introducción a la Ciberseguridad</h2>
+                <p>La ciberseguridad es un campo crucial que se enfoca en proteger sistemas informáticos, redes y datos contra accesos no autorizados, ataques, daños y robos. Con la creciente dependencia de las tecnologías digitales, la ciberseguridad se ha convertido en un aspecto vital para individuos y organizaciones por igual.</p>
+                <p>Los objetivos principales de la ciberseguridad son:</p>
+                <ul>
+                    <li><strong>Confidencialidad:</strong> Asegurar que la información esté disponible solo para las personas autorizadas. Esto se logra mediante técnicas de cifrado y controles de acceso.</li>
+                    <li><strong>Integridad:</strong> Garantizar que la información sea precisa y no haya sido alterada sin autorización. Se utiliza la integridad de datos para verificar la exactitud y consistencia.</li>
+                    <li><strong>Disponibilidad:</strong> Asegurar que los sistemas y datos estén disponibles para los usuarios autorizados cuando lo necesiten. Esto incluye la implementación de redundancias y sistemas de recuperación ante desastres.</li>
+                </ul>
+                <p>La ciberseguridad es un campo en constante evolución debido a la naturaleza dinámica de las amenazas y las tecnologías emergentes. Es esencial estar al tanto de las últimas tendencias y prácticas para protegerse eficazmente contra ataques y vulnerabilidades.</p>
+            </section>
+
+            <section id="amenazas">
+                <h2>Tipos de Amenazas en Ciberseguridad</h2>
+
+                <h3>1. Malware</h3>
+                <p>El malware es software malicioso diseñado para dañar, explotar o obtener acceso no autorizado a sistemas informáticos. Aquí están algunos tipos comunes de malware:</p>
+                <ul>
+                    <li><strong>Virus:</strong> Un virus se adjunta a archivos y se propaga a través de ellos. Puede dañar o eliminar datos. Ejemplos incluyen CIH (Chernobyl) y Sasser.</li>
+                    <li><strong>Gusanos:</strong> Se propagan a través de redes sin necesidad de intervención humana. Ejemplos incluyen ILOVEYOU y Blaster.</li>
+                    <li><strong>Troyanos:</strong> Se ocultan dentro de software aparentemente legítimo para dar acceso al sistema a los atacantes. Ejemplos incluyen Zeus y Emotet.</li>
+                    <li><strong>Ransomware:</strong> Cifra archivos en el sistema y exige un rescate para liberarlos. Ejemplos incluyen WannaCry, NotPetya y Ryuk.</li>
+                    <li><strong>Spyware:</strong> Recopila información sobre el usuario sin su conocimiento, a menudo con fines de robo de datos. Ejemplos incluyen Keyloggers y Adware.</li>
+                    <li><strong>Adware:</strong> Muestra anuncios no deseados y puede recopilar datos sobre los hábitos de navegación del usuario. Ejemplos incluyen Gator y CoolWebSearch.</li>
+                    <li><strong>Rootkits:</strong> Ocultan la presencia de otros malware o de sus propias acciones en el sistema. Ejemplos incluyen Stuxnet y Sony BMG Rootkit.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/what_is_malware_academy_refresh/Types-of-Malware-ES.png?width=664&height=474&name=Types-of-Malware-ES.png" height="500" width="700" alt="Diagrama de Tipos de Malware">
+                </div>
+
+                <h3>2. Phishing</h3>
+                <p>El phishing es una técnica de engaño utilizada para obtener información confidencial de las personas. Las formas comunes de phishing incluyen:</p>
+                <ul>
+                    <li><strong>Phishing por Correo Electrónico:</strong> Mensajes fraudulentos que parecen provenir de entidades confiables, como bancos o redes sociales, para engañar a los usuarios y obtener información personal.</li>
+                    <li><strong>Phishing por SMS (Smishing):</strong> Mensajes de texto que intentan engañar a los usuarios para que hagan clic en enlaces maliciosos o proporcionen información personal.</li>
+                    <li><strong>Phishing por Voz (Vishing):</strong> Llamadas telefónicas en las que los atacantes se hacen pasar por representantes de instituciones confiables para obtener información confidencial.</li>
+                    <li><strong>Phishing en Redes Sociales:</strong> Mensajes y publicaciones en redes sociales que imitan a fuentes confiables para engañar a los usuarios y recopilar información personal.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://easydmarc.com/blog/wp-content/uploads/2021/09/Module-4-image-1024x768.png" height="500" width="700" alt="Ejemplos de Phishing">
+                </div>
+
+                <h3>3. Ataques de Denegación de Servicio (DoS)</h3>
+                <p>Los ataques DoS tienen como objetivo interrumpir la disponibilidad de un servicio o recurso. Existen varias variantes:</p>
+                <ul>
+                    <li><strong>Denegación de Servicio (DoS):</strong> Un ataque que sobrecarga un servidor con solicitudes hasta que se vuelve inoperativo. Ejemplos incluyen el ataque Ping of Death y los ataques de inundación de tráfico.</li>
+                    <li><strong>Denegación de Servicio Distribuida (DDoS):</strong> Utiliza una red de dispositivos comprometidos (botnets) para lanzar un ataque masivo contra un servidor, saturando sus recursos.</li>
+                    <li><strong>Amplificación de DDoS:</strong> Aprovecha servidores vulnerables para amplificar el tráfico del ataque y aumentar su impacto.</li>
+                    <li><strong>Reflejo de DDoS:</strong> Redirige el tráfico de los ataques a través de servidores intermediarios para ocultar la fuente del ataque y amplificar su efecto.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://cdn.prod.website-files.com/62e153e41d6ee298cc9a98f7/639f433abf3d71a94ef2e5fd_ataque-ddos.png" height="500" width="700" alt="Diagrama de Ataques DoS">
+                </div>
+
+                <h3>4. Inyección de SQL</h3>
+                <p>La inyección de SQL es una vulnerabilidad que permite a los atacantes ejecutar comandos SQL maliciosos en una base de datos a través de un formulario web o una consulta mal formada. Las consecuencias pueden incluir:</p>
+                <ul>
+                    <li><strong>Acceso No Autorizado:</strong> Los atacantes pueden acceder a datos sensibles almacenados en la base de datos.</li>
+                    <li><strong>Modificación de Datos:</strong> Permite a los atacantes alterar o eliminar datos.</li>
+                    <li><strong>Acceso a Sistemas:</strong> En algunos casos, la inyección de SQL puede permitir a los atacantes ejecutar comandos en el sistema operativo del servidor.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://i.ytimg.com/vi/qSzU2RW882I/maxresdefault.jpg" height="500" width="700" alt="Diagrama de Inyección de SQL">
+                </div>
+
+                <h3>5. Ataques de Día Cero</h3>
+                <p>Un ataque de día cero explota una vulnerabilidad en software o hardware que aún no ha sido descubierta por el desarrollador o el proveedor de seguridad. Los ataques de día cero son particularmente peligrosos porque no existen parches o protecciones conocidas.</p>
+                <ul>
+                    <li><strong>Exploits:</strong> Herramientas que aprovechan vulnerabilidades de día cero para ejecutar ataques.</li>
+                    <li><strong>Malware de Día Cero:</strong> Malware diseñado para explotar vulnerabilidades recién descubiertas.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://www.akamai.com/site/es/images/section-background/zero-day-attack-image-glossary.png" height="500" width="700" alt="Diagrama de Ataques de Día Cero">
+                </div>
+            </section>
+
+            <section id="proteccion">
+                <h2>Cómo Protegerse de Amenazas Cibernéticas</h2>
+
+                <h3>1. Prácticas de Seguridad Básicas</h3>
+                <p>Las siguientes prácticas ayudan a protegerse contra amenazas comunes:</p>
+                <ul>
+                    <li><strong>Utilizar Contraseñas Fuertes:</strong> Las contraseñas deben ser largas y complejas, combinando letras, números y caracteres especiales. Se recomienda cambiar las contraseñas regularmente y utilizar autenticación multifactor.</li>
+                    <li><strong>Actualizar Software Regularmente:</strong> Mantener todos los sistemas, aplicaciones y antivirus actualizados para protegerse contra vulnerabilidades conocidas.</li>
+                    <li><strong>Hacer Copias de Seguridad:</strong> Realizar copias de seguridad periódicas de datos importantes para poder recuperarlos en caso de un ataque de ransomware o pérdida de datos.</li>
+                    <li><strong>Utilizar Antivirus y Antimalware:</strong> Implementar soluciones de seguridad que puedan detectar y eliminar malware antes de que cause daño.</li>
+                </ul>
+
+                <h3>2. Seguridad de Red</h3>
+                <p>Proteger la red es fundamental para evitar accesos no autorizados y ataques:</p>
+                <ul>
+                    <li><strong>Firewall:</strong> Utilizar firewalls para controlar el tráfico entrante y saliente y bloquear conexiones no deseadas.</li>
+                    <li><strong>Sistemas de Detección y Prevención de Intrusiones (IDS/IPS):</strong> Monitorear la red en busca de actividades sospechosas y prevenir posibles intrusiones.</li>
+                    <li><strong>Segmentación de Red:</strong> Dividir la red en segmentos para limitar el acceso a información sensible y contener posibles ataques.</li>
+                </ul>
+
+                <h3>3. Seguridad de Aplicaciones</h3>
+                <p>Las aplicaciones deben ser seguras para evitar vulnerabilidades que puedan ser explotadas:</p>
+                <ul>
+                    <li><strong>Desarrollo Seguro:</strong> Implementar prácticas de desarrollo seguro y revisar el código para detectar vulnerabilidades.</li>
+                    <li><strong>Pruebas de Seguridad:</strong> Realizar pruebas de penetración y análisis de vulnerabilidades en aplicaciones para identificar y corregir posibles problemas.</li>
+                    <li><strong>Gestión de Parcheo:</strong> Aplicar parches y actualizaciones para corregir vulnerabilidades conocidas en aplicaciones.</li>
+                </ul>
+
+                <h3>4. Protección de Datos</h3>
+                <p>Proteger los datos sensibles es esencial para mantener la confidencialidad y la integridad:</p>
+                <ul>
+                    <li><strong>Cifrado:</strong> Utilizar cifrado para proteger datos en reposo y en tránsito, garantizando que solo las personas autorizadas puedan acceder a ellos.</li>
+                    <li><strong>Control de Acceso:</strong> Implementar controles de acceso para garantizar que solo los usuarios autorizados puedan acceder a datos sensibles.</li>
+                    <li><strong>Políticas de Privacidad:</strong> Desarrollar y mantener políticas de privacidad claras para gestionar cómo se recopilan, almacenan y utilizan los datos.</li>
+                </ul>
+            </section>
+
+            <section id="practicas">
+                <h2>Prácticas Recomendadas para Empresas</h2>
+                <p>Las empresas deben adoptar un enfoque integral para protegerse contra amenazas cibernéticas. Aquí algunas prácticas recomendadas:</p>
+
+                <h3>1. Educación y Capacitación</h3>
+                <p>Educar a los empleados sobre ciberseguridad es clave para reducir el riesgo de ataques:</p>
+                <ul>
+                    <li><strong>Capacitación en Seguridad:</strong> Ofrecer formación regular sobre prácticas de seguridad, reconocimiento de amenazas y procedimientos de respuesta a incidentes.</li>
+                    <li><strong>Simulacros de Phishing:</strong> Realizar simulacros para ayudar a los empleados a identificar intentos de phishing y mejorar su capacidad de respuesta.</li>
+                </ul>
+
+                <h3>2. Gestión de Riesgos</h3>
+                <p>Identificar y evaluar riesgos potenciales para implementar medidas adecuadas:</p>
+                <ul>
+                    <li><strong>Evaluaciones de Riesgos:</strong> Realizar evaluaciones periódicas para identificar vulnerabilidades y amenazas.</li>
+                    <li><strong>Plan de Respuesta a Incidentes:</strong> Desarrollar y mantener un plan de respuesta a incidentes para abordar posibles brechas de seguridad y minimizar su impacto.</li>
+                </ul>
+
+                <h3>3. Seguridad Física y de Infraestructura</h3>
+                <p>Proteger la infraestructura física y tecnológica es crucial:</p>
+                <ul>
+                    <li><strong>Control de Acceso Físico:</strong> Implementar medidas de seguridad para restringir el acceso físico a áreas sensibles y equipos críticos.</li>
+                    <li><strong>Protección de Centros de Datos:</strong> Asegurar que los centros de datos estén protegidos contra accesos no autorizados y desastres.</li>
+                </ul>
+
+                <h3>4. Cumplimiento Normativo</h3>
+                <p>Las empresas deben cumplir con regulaciones y estándares de ciberseguridad:</p>
+                <ul>
+                    <li><strong>Regulaciones:</strong> Asegurarse de cumplir con normativas locales e internacionales como GDPR, CCPA y PCI DSS.</li>
+                    <li><strong>Auditorías de Seguridad:</strong> Realizar auditorías de seguridad periódicas para verificar el cumplimiento de las normativas y estándares.</li>
+                </ul>
+            </section>
+
+            <section id="normativas">
+                <h2>Normativas y Estándares de Ciberseguridad</h2>
+                <p>El cumplimiento de normativas y estándares es fundamental para asegurar la protección de la información y la privacidad:</p>
+
+                <h3>1. GDPR (Reglamento General de Protección de Datos)</h3>
+                <p>El GDPR es una normativa de la Unión Europea que protege la privacidad y los datos personales de los ciudadanos de la UE. Incluye requisitos para la recopilación, procesamiento y almacenamiento de datos personales.</p>
+
+                <h3>2. CCPA (Ley de Privacidad del Consumidor de California)</h3>
+                <p>La CCPA otorga a los residentes de California derechos sobre su información personal, incluyendo el derecho a saber qué datos se recopilan y el derecho a solicitar la eliminación de esos datos.</p>
+
+                <h3>3. PCI DSS (Estándares de Seguridad de Datos para la Industria de Tarjetas de Pago)</h3>
+                <p>El PCI DSS es un conjunto de estándares diseñado para proteger la información de tarjetas de pago y garantizar la seguridad de las transacciones financieras.</p>
+
+                <h3>4. ISO/IEC 27001</h3>
+                <p>La norma ISO/IEC 27001 establece los requisitos para un sistema de gestión de seguridad de la información (SGSI), proporcionando un marco para la protección de la información en las organizaciones.</p>
+            </section>
+
+            <section id="recursos">
+                <h2>Recursos Adicionales</h2>
+                <p>Para obtener más información y mejorar la ciberseguridad, puedes explorar los siguientes recursos:</p>
+                <ul>
+                    <li><a href="https://www.cisa.gov/cybersecurity" target="_blank">Cybersecurity and Infrastructure Security Agency (CISA)</a></li>
+                    <li><a href="https://www.cert.org/" target="_blank">Computer Emergency Response Team (CERT)</a></li>
+                    <li><a href="https://www.ecc-cyber.com/" target="_blank">European Cyber Crime Centre (EC3)</a></li>
+                    <li><a href="https://www.sans.org/" target="_blank">SANS Institute</a></li>
+                    <li><a href="https://www.owasp.org/" target="_blank">Open Web Application Security Project (OWASP)</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:f42157463@gmail.com">f42157463@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
